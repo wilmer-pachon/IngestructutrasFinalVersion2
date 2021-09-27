@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
    
+     <!-- FLICKITY -->
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/9518973740.js" crossorigin="anonymous"></script>
@@ -383,7 +385,27 @@
     <!-- FIN PROYECTOS -->
 
     <!-- PORTAFOLIO -->
-    <section  class="our-gallery between" id="gallery">
+    <section class="our-gallery between" id="gallery">
+      <div class="inner-width">
+        <h1 class="headline" style="color: #134e9d; text-align: center;">
+          <span class="first-letter" style="color: #134e9d; text-align: center;"></span>Portafolio
+        </h1>
+      <div class="border"></div>
+      <div class="main-carousel container">
+        <div class="cell"><img src="img/1.jpg" alt=""></div>
+        <div class="cell"><img src="img/2.jpg" alt=""></div>
+        <div class="cell"><img src="img/3.jpg" alt=""></div>
+        <div class="cell"><img src="img/4.jpg" alt=""></div>
+        <div class="cell"><img src="img/5.jpg" alt=""></div>
+        <div class="cell"><img src="img/6.jpg" alt=""></div>
+        <div class="cell"><img src="img/7.jpg" alt=""></div>
+        <div class="cell"><img src="img/8.jpg" alt=""></div>
+      </div>
+    </section>
+    <!-- FIN PORTAFOLIO -->
+
+    <!-- PORTAFOLIO -->
+    <!-- <section  class="our-gallery between" id="gallery">
       <div class="gallery-section">
         <div class="inner-width">
         <h1 class="headline" style="color: #134e9d; text-align: center;">
@@ -427,7 +449,7 @@
         </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- FIN POIRTAFOLIO -->
     
     <!-- CONTACTENOS -->
@@ -594,6 +616,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      wrapAround:true,
+      freeScroll: true
+    });
     </script>
     
     
