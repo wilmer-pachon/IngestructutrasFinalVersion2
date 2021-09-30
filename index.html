@@ -1,750 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bell Bootstrap 4 Theme</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/Diseño sin título (77).ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Document</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Scroll reveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
 
-    <!-- Favicon -->
-    <link href="img/FINLALOGO.ico" rel="icon">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+   
+    <!-- FLICKITY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/9518973740.js" crossorigin="anonymous"></script>
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+    <!-- SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-    <!-- Bootstrap CSS File -->
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    
+
+    <!-- OwlCarousel -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+
+    <!-- POPUP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
   
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Scroll to top section -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="fa fa-long-arrow-up scrolltop_icon"></i>
+    </a>
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    
-    <!-- =======================================================
-      Theme Name: Bell
-      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
-  </head>
-
-  <body>
-    <!-- Page Content
-    ================================================== -->
-
-    <!-- Header -->
-    <header id="header">
-      <div class="container">
-      
-        <div id="logo" class="pull-left">
-          <a href="index.html"><img src="img/FINLALOGO.jpeg" alt="" title="" /></img></a>
-          <!-- Uncomment below if you prefer to use a text image -->
-          <!--<h1><a href="#hero">Bell</a></h1>-->
+    <!-- CABECERA -->
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="nav">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
+              <!-- <i class="fas fa-times"></i> -->
+              <!-- <a href="#hero" class="logo">E&G</a> -->
+              <a href="#hero" class="logo"><img src="img/Diseño sin título (76).png" alt="" style="margin-left: 2rem; width: 80%; height: 70%;"></a>
+              <!-- <h3 style="padding-right: 10rem; color: #fff;">INGESTRUCTURASE&G</h3> -->
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#hero" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#gallery" class="nav-link">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contáctenos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-          
-        <nav id="nav-menu-container">
-          <ul  class="nav-menu">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#team">Nuestro Equipo</a></li>
-            <li><a href="#contact">Contáctanos</a></li>
-          </ul>
-        </nav><!-- #nav-menu-container -->
-        
-        <nav class="nav social-nav pull-right hidden-sm-down">
-          <a href="pronto.html" target="_blank"><i class="fa fa-instagram"></i></a> <a href="pronto.html" target="_blank"><i class="fa fa-facebook"></i></a> <a href="pronto.html" target="_blank"><i class="fa fa-envelope"></i></a> 
-        </nav>
-      </div>
     </header>
-    <!-- #header -->
-
-    <!-- Hero -->
+    <!-- FIN CABECERA -->
 
     <section class="hero" id="hero">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="img/Integral Jurídica (12).png" style="width: 350px; height: 350px"></a>
-          </div>
-        </div>
-        <div data-aos="fade-up" class="caption col-md-12">
-          <!-- <h2 style="font-size: 5vw;">
-          </h2> -->
-          <h2 style="font-size: 5vw;">ABOGADOS & ASOCIADOS</h2>
-          <div data-aos="fade-down">
-            <!-- <p class="tagline">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae!
-            </p> -->
-          </div>
-          
-          <div data-aos="zoom-in">
-            <a class="btn btn-full" href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20el%20más%20sobre%20ustedes" class="whatsapp" target="_blank">Saber Más</a>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    <!-- /Hero -->
-    
-    
-  
-    <!-- NOSOTROS -->
-    <section class="about" id="about">
-      <div data-aos="fade-right" class="container text-center">
-        <h2 style="padding-bottom: 10px">
-          SOBRE NOSOTROS
-        </h2>
-
-        <p style="font-size: 1.5rem;">
-          Somos una firma constituida por profesionales del derecho que brinda asesoría y representación jurídica en diferentes áreas tales como: derecho laboral especial, derecho laboral administrativo,  derecho penal, derecho policivo, derecho civil y derecho de familia.
-        </p>
-
-        <div data-aos="fade-right" class="row stats-row">
-
-          <div class="container-card img-fluid">
-            <div class="card">
-              <div class="cover">
-                <!-- <h1></h1> -->
-                <img src="img/Dlbes.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="dl">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho laboral especial</h3>
-                  <p> Es el conjunto de principios, acciones y normas que regulan directa e indirectamente las relaciones entre empleadores y trabajadores.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="cover">
-                <!-- <h1></h1> -->
-                <img src="img/DerechoL.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="dl">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho laboral administrativo</h3>
-                  <p> Es una rama del derecho público que regula las relaciones de trabajo entre los entes públicos y sus servidores, quienes se vinculan a un empleo público.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="cover">
-                <!-- <h1>About</h1> -->
-                <img src="img/RedaccionD.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="rd">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho penal</h3>
-                  <p> Es un mecanismo o una herramienta utilizadas por los abogados para controlar la sociedad, o como ya lo comentamos, el comportamiento de las personas para hacer justicia.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="cover">
-                <!-- <h1>About</h1> -->
-                <img src="img/TramitesL.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="tl">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho policivo</h3>
-                  <p>Es un instrumento sistemático de normas que regulan imperativamente comportamientos humanos, con carácter coactivo o preventivo, y excepcionalmente correctivo y represivo.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="cover">
-                <!-- <h1>About</h1> -->
-                <img src="img/DeCivil.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="tl">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho civil</h3>
-                  <p>Conjunto de principios del derecho y normas jurídicas con el objetivo de regular todo tipo de relación personal de forma forzada o voluntaria, entre dos partes que pueden ser personas privadas o públicas, jurídicas o físicas.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="cover">
-                <!-- <h1>About</h1> -->
-                <img src="img/DeFam.jpg" style="width: 100% ; height: 140%;" alt="">
-              </div>
-              <div class="content-case" id="tl">
-                <div class="content">
-                  <h3 style="color: #cdc07c">Derecho de familia</h3>
-                  <p>Es el conjunto de normas e instituciones jurídicas que regulan las relaciones personales y patrimoniales de los miembros que integran la familia.</p>
-                  <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>    
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- FIN NOSOTROS -->
-
-    <!-- Parallax -->
-
-    <!-- <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
-      <h2>
-        Welcome to a perfect theme
-      </h2>
-
-      <p>
-        This is the most powerful theme with thousands of options that you have never seen before.
-      </p>
-      <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
-    </div> -->
-    <!-- /Parallax -->
-
-    <!-- SERVICIOS -->
-    <section class="features" id="services">
       <div class="container">
-        <h2 class="text-center" style="color: #cdc07c;">
-          NUESTROS SERVICIOS
+        <h2 class="sub-headline">
+          <!-- <span class="first-letter">E&G</span> -->
+          <br>
         </h2>
-
-        <p style="color: #fff; text-align: center; font-size: 1.5rem;">
-          Somos una firma de abogados especializada en prestar distintos servicios como lo son: consultoría, derecho administrativo, derecho laboral especial, derecho penal, derecho civil, derecho de familia, derecho policivo, y por ultimo notariado y registro.
-        </p>
-
-        <div  class="row">
-          
-          <div class="feature-col col-lg-4 col-xs-12" id="leg">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/ConsultEmp.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Consultoria Legal.</h3>
-                    <p>La consultoria legal para empresas puede administrar su organización para lograr un progreso en el mercado y darles solución a los factores más complicados, en caso de que posea algún problema legal muy grave y no sepa qué paso dar o a quién acudir.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="feature-col col-lg-4 col-xs-12" id="adm">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/DAdmin.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho Admnistrativo.</h3>
-                    <p>Es aquella parte del derecho público que tiene por objeto la organización, los medios y las formas de la actividad de las Administraciones públicas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div  class="feature-col col-lg-4 col-xs-12" id="com">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/Dcomercial.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho laboral especial</h3>
-                    <p>Es la rama del derecho que se encarga de regularizar, mediante reglas jurídicas, las relaciones que establecen a partir de trabajo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12" id="civ">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/DereP.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho Penal.</h3>
-                    <p>El derecho penal asocia a la realización de determinadas conductas, llamadas delitos, penas y medidas de seguridad como consecuencias jurídicas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12" id="civ">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/Dcivil.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho Civil.</h3>
-                    <p>Conjunto de principios del derecho y normas jurídicas con el objetivo de regular todo tipo de relación personal o patrimonial.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="feature-col col-lg-4 col-xs-12" id="pro">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/ProcesoF.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho de familia</h3>
-                    <p>
-                      Divorcio del matrimonio civil
-                      Adopciones
-                      Cesación de los efectos civiles del matrimonio religioso
-                      Salida de niños del país
-                      Restablecimiento de derecho de los niños
-                      Ejecutivo de alimentos
-                      Alimento a favor de mayor de edad
-                      Sucesiones
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-
         <br>
-        
-
-        <div class="row">
-          <div class="feature-col col-lg-4 col-xs-12" id="civ">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/Derpol.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Derecho policivo</h3>
-                    <p>Es un instrumento sistemático de normas que regulan imperativamente comportamientos humanos, con carácter coactivo o preventivo, y excepcionalmente correctivo y represivo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- <h1 class="headline">Ingestrucuturas</h1> -->
+        <video id="video" autoplay muted loop>
+          <source src="video/INGE.mp4">
+        </video> 
+        <img class="headline" src="img/Diseño sin título (77).png" style="width:25%; height: 70%;" alt="">
+        <div class="headline-description">
+          <div class="separator">
+            <!-- <div class="line line-left"></div>
+            <div class="line line-right"></div> -->
           </div>
-
-          
-
-          <div class="feature-col col-lg-4 col-xs-12" id="not">
-            <div data-aos="fade-down" class="container-c">
-              <div class="card">
-                <div class="imgBx">
-                  <img src="img/Not.jpg" alt="">
-                </div>
-                <div class="contentBx">
-                  <div class="content">
-                    <h3 style="color: #cdc07c">Notariado y registro.</h3>
-                    <p>Divorcios
-                      Matrimonios civiles de colombianos y extranjeros
-                      Matrimonios por poder e internet
-                      Compraventas de bienes muebles e inmuebles
-                      Venta con pacto de retroventa
-                      Estudio de títulos
-                      Fiducias
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="single-animation">
+            <br>
+            <!-- <h5>Materializamos tus sueños</h5> -->
+            <!-- <button class="btn-hero">Saber Más</button> -->
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20ustedes" target="_blank" class="btn btn-hero" style="padding-top: 15px; font-size: 15px;">Saber Más</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- FIN SERVICIOS -->
 
-    <!-- Call to Action -->
-
-    <!-- <section class="cta">
+    <!-- <section  id="hero">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-            <h2>
-              Call to Action Section
-            </h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, nec ad nisl mandamus imperdiet, ut corpora cotidieque cum. Et brute iracundia his, est eu idque dictas gubergren
-            </p>
+        <div class="banner">
+          <div class="text1">
+            <h1 style="font-size: 5vw;">INGESTRUCTURAS E&G SAS</h1>
+            <br>  
+            <p>E&G SAS</p>
+            <video id="video" autoplay muted loop>
+              <source src="video/INGE.mp4">
+            </video> 
+            <br>
+            <br>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20ustedes" target="_blank">Saber Más</a>
           </div>
+          <img src="img/INGESTRUCTURAS E&G (4).png" alt="" class="images" style="padding-bottom: 10rem;">
+        </div>
+      </div>
+    </section> -->
 
-          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn btn-ghost" href="#">Buy This Theme</a>
+    <!-- <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline">
+          <span class="first-letter">E&G</span>
+          <br>
+        </h2>
+        <br>
+        <h1 class="headline">Ingestrucuturas</h1>
+        <video id="video" autoplay muted loop>
+          <source src="video/INGE.mp4">
+        </video> 
+        <img class="headline" src="img/FINAL.png" style="width: 300px; height: 220px;" alt="">
+        <div class="headline-description">
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="line line-right"></div>
+          </div>
+          <div class="single-animation">
+            <br>
+            <h5>Materializamos tus sueños</h5>
+            <button class="btn-hero">Saber Más</button>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20ustedes" target="_blank" class="btn btn-hero" style="padding-top: 15px; font-size: 15px;">Saber Más</a>
           </div>
         </div>
       </div>
     </section> -->
-    <!-- /Call to Action -->
 
-    <!-- PPRTAFOLIO -->
-    <section class="portfolio" id="portfolio">
-      <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" class="container text-center">
-        <h2 style="color: #cdc07c;">
-          PORTAFOLIO
-        </h2>
+    <!-- NOSOTROS -->
+    <section class="discover-our-story about" id="about">
+        <div class="container">
+            <div data-aos="fade-right"
+            data-aos-offset="300" class="construct-info">
+                <div  class="construct-description padding-right animate-left">
+                    <div  class="global-headline">
+                        <h2 class="sub-headline" style="color: #134e9d;">
+                            <!-- <span class="first-letter" style="color: #134e9d;">S</span>obre -->
+                        </h2>
+                        <h1 class="headline headline-dark" style="color: #134e9d;">Sobre <span style="color: #134e9d; font-weight: bold;">Nosotros</span></h1>
+                    </div>
+                    <p style="font-size: 25px;">
+                      Somos una compañía con amplia experiencia en el deserrollo de proyectos de diseño, construcción e infraestructura. 
+                      <br>
+                      Contamos con un personal altamente capacitado, bajo un sistema de gestión integral que cumple con las necesidades de todos nuestros clientes. 
+                    </p>
+                    <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20ustedes" target="_blank" class="btn btn-hero" style="padding-top: 15px; font-size: 15px;">Contáctanos &nbsp;<i class="fab fa-whatsapp"></i></a>
+                    <!-- <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20ustedes" target="_blank" class="btn body-btn">Contáctanos &nbsp;<i class="fab fa-whatsapp"></i></a> -->
+                </div>
+                <div class="construct-info-img animate-right">
+                    <img src="img/scott-blake-z_p0-CnnpCw-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN NOSOTROS -->
 
-        <p style="font-size: 1.5rem;">
-          Contamos con una defensa tecnica la cual se apoya en laboratorios forense, peritos expertos e investigadores profesionales.
-        </p>
+    <!-- SERVICIOS -->
+    <section class="our-services between" id="services">
+      <div class=" container-serv">
+        <div data-aos="zoom-in-right" class="global-headline">
+          <h2 class="sub-headline" style="color: #134e9d;">
+              <!-- <span class="first-letter" style="color: #134e9d;">N</span>uestros -->
+          </h2>
+          <br>
+          <h1 class="headline headline-dark" style="color: #134e9d;" >Nuestros <span style="color: #134e9d; font-weight: bold;">Servicios</span></h1>
+          <p style="font-size: 30px; color: #1c1d21;">Suministro de servicios profesionales y especializados en el desarrollo de proyectos de construcción e infraestructura.</p>
+        </div>
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/service-1.jpg" alt="">
+        </div>
+        <div class="content" id="serv1">
+          <div>
+            <h3>Remodelaciónes de bodegas.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/service-2.jpg" alt="">
+        </div>
+        <div class="content" id="serv2">
+          <div>
+            <h3>Reconstrucción de cercas.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/service-3.jpg" alt="">
+        </div>
+        <div class="content" id="serv3">
+          <div>
+            <h3>Construcción de locales comerciales.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/service-4.jpg" alt="">
+        </div>
+        <div class="content" id="serv4">
+          <div>
+            <h3>Diseño y construcción de casas campestres.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/proyect3.jpg" alt="">
+        </div>
+        <div class="content" id="serv5">
+          <div>
+            <h3>Diseño y construcción de edificios.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div data-aos="zoom-in-left" class="card">
+        <div class="imgBx" data-text="">
+          <img src="img/services/service-6.jpg" alt="">
+        </div>
+        <div class="content" id="serv6">
+          <div>
+            <h3>Diseño y construcción de apartamentos.</h3>
+            <p></p>
+            <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20más%20sobre%20este%20servicio" target="_blank">Saber Más &nbsp;<i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+       </div>
+
+       
       </div>
+    </section>
+    <!-- FIN SERVICIOS -->
 
-      <div class="container img-fluid portfolio-grid">
-        <div class="row">
+    <!-- PROYECTOS -->
+    <section class="our-projects between" id="projects"> 
+      <div class="container container-card">
+        <div data-aos="zoom-in-right" class="global-headline">
+          <h1 class="headline headline-dark"  style="color: #134e9d;margin-left: 10px; padding-bottom: 10px; margin-right: 35px;">Nuestros</h1>
+          <h1 class="headline headline-dark"  style="color: #134e9d;margin-left: 10px; padding-bottom: 10px;"><span style="color: #134e9d; font-weight: bold;">Proyectos &nbsp;</span></h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <p style="font-size: 30px; color: #fff; text-align: center; display: flex;">
+          Estos son algunos de nuestros proyectos los cuales 
+          se cumplieron con total finalidad al 100%.
+        </p> -->
 
-          <div  class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-right"
-            class="box">
-              <div class="imgB">
-                <img src="img/DenfTec.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Defensa<br><span>Tecnica.</span></h2>
-              </div>
-            </div>
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect1.jpg" alt="" style="width: 99%;" height="100%">
           </div>
-
-          <div class="container-p col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-left"
-            class="box">
-              <div class="imgB">
-                <img src="img/PeritoExp.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <br>
-                <h2 style="color: #084066;">Peritos <br><span>Expertos</span></h2>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <div class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-left"
-            class="box">
-              <div class="imgB">
-                <img src="img/science-in-hd-qmLwjOEDFrE-unsplash.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">laboratorios <br><span>Forense</span></h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-right"
-            class="box">
-              <div class="imgB">
-                <img src="img/Invest.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Investigadores <br><span>Expertos</span></h2>
-              </div>
-            </div>
-          </div>
+          <div class="cdetail" id="proyect1">
+            <h2>Local Comercial.</h2>
+            <p>
+              Centro comercial Nuestro Bogotá.
+            </p>
+          </div>  
         </div>
 
-        <div class="row">
-          <div class=" container-p col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-left"
-            class="box">
-              <div class="imgB">
-                <img src="img/homicidio.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Derecho penal <br><span>Homicidio</span></h2>
-              </div>
-            </div>
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect3.jpg" alt="" class="">
           </div>
-
-          <div class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-right"
-            class="box">
-              <div class="imgB">
-                <img src="img/lesiones-personales.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Derecho penal <br><span>Lesiones personales</span></h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-left"
-            class="box">
-              <div class="imgB">
-                <img src="img/apropiacion_indebida.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Derecho penal <br><span>Delito de apropiación</span></h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="container-p  col-lg-3 col-sm-6 col-xs-12">
-            <div data-aos="flip-right"
-            class="box">
-              <div class="imgB">
-                <img src="img/Malversación.jpg" alt="">
-              </div>
-              <div class="contentb">
-                <h2 style="color: #084066;">Derecho penal <br><span>Malversación de fondos</span></h2>
-              </div>
-            </div>
-          </div>
+          <div class="cdetail" id="proyect2">
+            <h2>Edificio Salomé</h2>
+            <p>
+              Construcción Edificio Salomé - Fontibon.
+            </p>
+          </div>  
         </div>
+
+        <br
+        ><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect2.jpg" alt="" style="width: 99%;" height="100%">
+          </div>
+          <div class="cdetail" id="proyect3">
+            <h2>Local Comercial.</h2>
+            <p>
+              Centro comercial Nuestro Bogotá.
+            </p>
+          </div>  
+        </div>
+
+
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect4.jpg" alt="">
+          </div>
+          <div class="cdetail" id="proyect4">
+            <h2>Edificio Corferias</h2>
+            <p>
+              Construcción edificio hotel - corferias.
+            </p>
+          </div>  
+        </div>
+
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect5.jpg" alt="">
+          </div>
+          <div class="cdetail" id="proyect5">
+            <h2>Vitrina Comercial</h2>
+            <p>
+              Centro comercial Paseo Villa del Rio.
+            </p>
+          </div>  
+        </div>
+
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect6.jpg" alt="">
+          </div>
+          <div class="cdetail" id="proyect6">
+            <h2>Cerca perimetral</h2>
+            <p>
+              Reconstrucción Cerca Perimetral Edificio Ventura 115.
+            </p>
+          </div>  
+        </div>
+
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect7.jpg" alt="">
+          </div>
+          <div class="cdetail" id="proyect7">
+            <h2>Apartamento.</h2>
+            <p>
+              Apartamento edificio Salomé - Fontibon.
+            </p>
+          </div>  
+        </div>
+
+      
+        <div data-aos="zoom-in-right" class="mycard">
+          <div class="cimg">
+            <img src="img/portfolio/proyect8.png" alt="">
+          </div>
+          <div class="cdetail" id="proyect8">
+            <h2>Apartamento.</h2>
+            <p>
+              Apartamento edificio Living 127 - Bogotá.
+            </p>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!-- FIN PROYECTOS -->
+
+    <!-- PORTAFOLIO -->
+    <section class="our-gallery between" id="gallery">
+      <div class="inner-width">
+        <h1 class="headline" style="color: #134e9d; text-align: center;">
+          <span class="first-letter" style="color: #134e9d; text-align: center;"></span>Portafolio
+        </h1>
+      <div class="border"></div>
+      <div class="main-carousel container">
+        <div class="cell"><img src="img/1.jpg" alt=""></div>
+        <div class="cell"><img src="img/2.jpg" alt=""></div>
+        <div class="cell"><img src="img/3.jpg" alt=""></div>
+        <div class="cell"><img src="img/4.jpg" alt=""></div>
+        <div class="cell"><img src="img/5.jpg" alt=""></div>
+        <div class="cell"><img src="img/6.jpg" alt=""></div>
+        <div class="cell"><img src="img/7.jpg" alt=""></div>
+        <div class="cell"><img src="img/8.jpg" alt=""></div>
       </div>
     </section>
     <!-- FIN PORTAFOLIO -->
 
-    <br>
-    <!-- NUESTRO EQUIPO -->
-    <section class="team" id="team">
-      <div data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500" class="container">
-        <h2 class="text-center" style="color: #cdc07c;">
-          NUESTRO EQUIPO
-        </h2>
+    <!-- PORTAFOLIO -->
+    <!-- <section  class="our-gallery between" id="gallery">
+      <div class="gallery-section">
+        <div class="inner-width">
+        <h1 class="headline" style="color: #134e9d; text-align: center;">
+          <span class="first-letter" style="color: #134e9d; text-align: center;"></span>Portafolio
+        </h1>
+        <div class="border"></div>
+        <div  class="slider  owl-carousel">
 
-        <p class="text-center" style="font-size: 1.5rem"> 
-          Nuestro equipo está conformado por profesionales quienes
-          te ayudaran en el proceso que necesites. Puedes comunicarte con nosotros a traves de nuestras redes sociales y te atenderemos con gusto.
-        </p>
+          <a data-aos="flip-left" data-aos="flip-left"  class="gall">
+            <img src="img/1.jpg" alt="">
+          </a>
 
-        <div class="row">
-          <div data-aos="flip-right" class="col-sm-3 col-xs-6">
-            
-          </div>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/2.jpg" alt="">
+          </a>
 
-          <!-- <div data-aos="flip-left" class="col-sm-3 col-xs-6" style="margin-left: 250px;">
-            <div  class="card card-block">
-              <a href=""><img alt="" class="team-img" src="img/eskay-lim-nhPSp2wB5do-unsplash.jpg" style="width: 100%; height: 330px;">
-              <div class="card-title-wrap">
-                <span class="card-title">Cesar Alvarado</span> <span class="card-text">Director juridico</span>
-              </div>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/3.jpg" alt="">
+          </a>
 
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Contáctame
-                </h4>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/4.jpg" alt="">
+          </a>
 
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-                </nav>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/5.jpg" alt="">
+          </a>
 
-                <p>
-                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                </p>
-              </div></a>
-            </div>
-          </div> -->
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/6.jpg" alt="">
+          </a>
 
-          <div data-aos="flip-right" class="col-sm-3 col-xs-6">
-            <div  class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="img/team-1.jpg" style="width: 100%; height: 330px;">
-              <div class="card-title-wrap">
-                <span class="card-title">Cesar Alvarado</span> <span class="card-text">Abogado</span>
-              </div>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/7.jpg" alt="">
+          </a>
 
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Contáctame
-                </h4>
+          <a data-aos="flip-left"  class="gall">
+            <img src="img/8.jpg" alt="">
+          </a>
 
-                <nav class="social-nav">
-                  <a href="pronto.html" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="pronto.html" target="_blank"><i class="fa fa-envelope"></i></a>
-                </nav>
-
-                <p>
-                  Especialista en derecho administrativo, constitucional, penal, civil y familia.
-                </p>
-              </div></a>
-            </div>
-          </div>
-
-          <div data-aos="flip-right" class="col-sm-3 col-xs-6">
-            <div  class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="img/team-2.jpg" style="width: 100%; height: 330px;">
-              <div class="card-title-wrap">
-                <span class="card-title">Pilar Sepúlveda</span> <span class="card-text">Abogada</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  CONTÁCTAME
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="pronto.html" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="pronto.html" target="_blank"><i class="fa fa-envelope"></i></a>
-                </nav>
-
-                <p>
-                  Especialista en derecho constitucional, administrativo y penal.
-                </p>
-              </div></a>
-            </div>
-          </div>
-
-          <div data-aos="flip-right" class="col-sm-3 col-xs-6">
-            
-          </div>
-          
-          <!-- <div data-aos="flip-left" class="col-sm-3 col-xs-6" style="margin-left: 80px;">
-            <div  class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="img/tingey-injury-law-firm-L4YGuSg0fxs-unsplash.jpg"  style="width: 100%; height: 330px;">
-              <div class="card-title-wrap">
-                <span class="card-title">Pilar Sepulveda</span> <span class="card-text">Abogada</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Contáctame
-                </h4>
-
-                <nav class="social-nav">
-                  <a href="#"><i class="fa fa-facebook"></i> <a href="#"><i class="fa fa-envelope"></i></a>
-                </nav>
-
-                <p>
-                  Abogada especialista en derecho constitucional, administrativo y penal.
-                </p>
-              </div></a>
-            </div>
-          </div> -->
-        </div> 
-        
+        </div>
+        </div>
       </div>
-    </section>
-    <!-- FIN NUESTRO EQUIPO -->
+    </section> -->
+    <!-- FIN POIRTAFOLIO -->
     
-    <!-- @component: footer -->
+    <!-- CONTACTENOS -->
+    <section  id="contact">
+      <div  class="contact-form">
+        <div class="first-container">
+          <div data-aos="fade-left" class="info">
+            <div >
+              <h3 >Dirección</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Carrera 94 M 91 A-82 Bogotá
+              </p>
+            </div>
 
-    <!-- CONTACTANOS -->
-    <section id="contact">
-      <div  class="container">
-        <div class="row">
-          <div data-aos="fade-right" class="col-md-12 text-center">
-            <h2 class="section-title" style="color: #cdc07c">CONTÁCTANOS</h2>
+            <div>
+              <h3>Cel</h3>
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                +57 3168085444
+              </p>
+            </div>
+
+            <div>
+              <h3>Correo</h3>
+              <p>
+                <i class="fas fa-envelope"></i>
+                Cotizaciones@ingestructuraseyg.com
+              </p>
+            </div>
+
+
           </div>
         </div>
-        
-        <div class="row">
-          <div class="col-lg-3 offset-lg-2">
-            <div  class="info">
-              <div data-aos="fade-right">
-                <i class="fa fa-map-marker"></i>
-                <p>Dir. Cr # 111-111<br>Lorem, ipsum.</p>
-              </div>
-              
-              <div data-aos="fade-right">
-                <i class="fa fa-envelope"></i>
-                <p>abogados@example.com</p>
-              </div>
-              
-              <div data-aos="fade-right">
-                <i class="fa fa-phone"></i>
-                <p>+57 3134036032</p>
-                <p>+57 3134841049</p>
-              </div>
-              
-            </div>
-          </div>
 
-          
-          <div class="col-lg-4">
-            <div class="form">
-              <div id="sendmessage">Tu mensaje a sido enviado con exito!</div>
-              <div id="errormessage"></div>
-              <form action="enviar.php" method="post" role="form" class="contactForm">
-                  <div data-aos="fade-right" class="form-group">
-                    <input type="text" name="names" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div data-aos="fade-right" class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                  <div data-aos="fade-right" class="form-group">
-                    <input type="text" class="form-control" name="asunto" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                  <div data-aos="fade-right" class="form-group">
-                    <textarea class="form-control" name="mensaje" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <div data-aos="fade-right" class="text-center"><button type="submit">Enviar</button></div>
-              </form>
+        <div data-aos="fade-left" class="sec-container">
+          <h2>Comunicate con nosotros</h2>
+          <form  action="enviar.php" method="POST" >
+            <div class="col-12 py-3 form-group">
+              <input autocomplete="off" id="name" name="names" type="text" class="form-control fh5co_contact_text_box" placeholder="Nombres y apellidos" />
             </div>
-          </div>
-
-          <div class="col">
-            <div  class="info">
-              <div data-aos="fade-right">
-                <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20el%20más%20sobre%20ustedes" target="_blank"><img src="img/qr-code (22).png" alt="" style="width: 110%; height: 100%;"></a>
-              </div>
+            <div class="col-6 py-3 form-group">
+              <input autocomplete="off" id="email" name="email" type="email" class="form-control fh5co_contact_text_box" placeholder="Correo" />
             </div>
-          </div>
-          
+            <div class="col-6 py-3 form-group">
+              <input autocomplete="off" id="subject" name="subject" type="text" class="form-control fh5co_contact_text_box" placeholder="Asunto" />
+            </div>
+            <div class="col-12 py-3 form-group">
+              <textarea id="message" name="message" class="form-control fh5co_contacts_message" placeholder="Mensaje"></textarea>
+            </div>
+            <button>Enviar</button>
+          </form>
         </div>
       </div>
     </section>
     <!-- FIN CONTACTENOS -->
+
 
     <!-- PIE DE PAGINA -->
     <div class="footer-dark">
@@ -754,32 +546,50 @@
             <div class="col-sm-6 col-md-3 item">
               <h3>Nuestros Servicios</h3>
               <ul>
-                <li><a href="#com">Consultoria legal</a></li>
-                <li><a href="#com">Derecho Administrativo</a></li>
-                <li><a href="#com">Derecho laboral especial</a></li>
-                <li><a href="#civ">Derecho penal</a></li>
-                <li><a href="#civ">Derecho civil</a></li>
-                <li><a href="#civ">Derecho de familia</a></li>
-                <li><a href="#not">Derecho policivo</a></li>
-                <li><a href="#not">Notariado y Registro</a></li>
+                <li><a href="#serv1">Remodelaciónes de bodegas.</a></li>
+                <li><a href="#serv2">Reconstrucción de cercas.</a></li>
+                <li><a href="#serv3">Construcción de locales comerciales.</a></li>
+                <li><a href="#serv4">Diseño y construcción de casas campestres.</a></li>
+                <li><a href="#serv5">Diseño y construcción de edificios</a></li>
+                <li><a href="#serv6">Diseño y construcción de apartamentos</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
-              <h3>Sobre Nosotros</h3>
+              <h3>Nuestros Proyectos</h3>
               <ul>
-                <li><a href="#dl">Derecho laboral especial</a></li>
-                <li><a href="#dl">Derecho laboral administrativo</a></li>
-                <li><a href="#dl">Derecho penal</a></li>
-                <li><a href="#rd">Derecho policivo</a></li>
-                <li><a href="#rd">Derecho civil</a></li>
-                <li><a href="#rd">Derecho familiar</a></li>
+                <li><a href="#proyect1">
+                  Local comercial.</a></li>
+                <li><a href="#proyect2">Edificio Salomé.</a></li>
+                <li><a href="#proyect3">local comercial.</a></li>
+                <li><a href="#proyect4">Edificio Corferias.</a></li>
+                <li><a href="#proyect5">Vitrina Comercial.</a></li>
+                <li><a href="#proyect6">Cerca Perimetral.</a></li>
+                <li><a href="#proyect7">Apartamento edificio Salomé.</a></li>
+                <li><a href="#proyect8">Apartamento edificio Living 127.</a></li>
               </ul>
             </div>
-            <div class="col-md-6 item text">
-              <h3>Infinite Abogados Asociados</h3>
-              <p style="color: #cdc07c;">La firma atenderá sus consultas a través de diferentes canales y le permitirá acceder al sistema LegalWeb, para hacer seguimiento a los distintos servicios y áreas del derecho.</p>
+            <div class="col-sm-6 item text">
+              <h3>Ingestructuras  E&G</h3>
+              <p>Suministro de Servicios Profesionales y Especializados en el desarrollo de proyectos de construcción e infraestructura.
+                <br>
+                <br>
+                <i class="fas fa-map-marker-alt"></i>
+                Carrera 94 M 91 A-82 Bogotá
+                <br>
+                <br>
+                <i class="fas fa-phone-alt"></i>
+                +57 3168085444
+                <br>
+                <br>
+                <i class="fas fa-envelope"></i>
+                Cotizaciones@ingestructuraseyg.com
+
+              </p>
+            </div>  
+            <div class="col item social">
+              <h3>Siguenos en redes sociales</h3>
+              <a href="https://www.facebook.com/IngestructurasEG" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/ingestructuraseyg/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
-            <div class="col item social"><a href="pronto.html" target="_blank"><i class="fa fa-facebook"></i></a><a href="pronto.html" target="_blank"><i class="fa fa-instagram"></i></a></div>
           </div>
           <p class="copyright">Desarrollado por Pegazus Technologies © 2021</p>
         </div>
@@ -787,87 +597,74 @@
     </div>
     <!-- FIN PIE DE PAGINA -->
 
-
-    <!-- <footer class="site-footer">
-      <div class="bottom">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-              <p class="copyright-text">
-                © BELL Theme
-              </p>
-              <div class="credits">
-                 
-               Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-              </div>
-            </div>
-            
-            <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="index.html">Home</a>
+    <!-- PIE DE PAGINA -->
+    <!-- <footer>
+      <div data-aos="fade-down" class="container">
+        <div class="footer-content">
+          <div class="footer-content-about">
+            <h4>Acerca de nosotros</h4>
+            <p>
+              Somos una empresa familiar, muy consciente de la situación actual, nuestros precios son muy amigables y competitivos.
+            </p>
+          </div>
+          <div class="footer-content-divider">
+            <div class="social-media">
+              <h4>Siguenos</h4>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.facebook.com/IngestructurasEG" target="_blank"><i class="fab fa-facebook"></i></a>
                 </li>
-
-                <li class="list-inline-item">
-                  <a href="#about">About Us</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#features">Features</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#team">Team</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#contact">Contact</a>
+                <li>
+                  <a href="https://www.instagram.com/ingestructuraseyg/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
-            
+            <div class="newsletter-container">
+              <h4>Desea recibir mas información?</h4>
+              <form action="" class="newsletter-form">
+                <input type="text" class="newsletter-input" placeholder="Correo">
+                <button class="newsletter-btn" type="submit">
+                  <i class="fas fa-envelope"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </footer> -->
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> <!-- JavaScript
+    <!-- FIN PIE DE PAGINA -->
 
-
-    <-- WHATS APP -->
-    <a href="https://wa.me/+573134036032?text=Me%20gustaría%20saber%20el%20más%20sobre%20ustedes" class="whatsapp" target="_blank"> 
+    <!-- WHATS APP -->
+    <a href="https://wa.me/+573168085444?text=Me%20gustaría%20saber%20el%20más%20sobre%20ustedes" class="whatsapp" target="_blank"> 
       <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
     <!-- FIN WHATS APP -->
 
-    <!-- Required JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/tether/js/tether.min.js"></script>
-    <script src="lib/stellar/stellar.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/easing/easing.js"></script>
-    <script src="lib/stickyjs/sticky.js"></script>
-    <script src="lib/parallax/parallax.js"></script>
-    <script src="lib/lockfixed/lockfixed.min.js"></script>
-    
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
-    
-    <!-- <script src="contactform/contactform.js"></script> -->
-
+    <script type="text/javascript" src="js/main.js"></script>
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      wrapAround:true,
+      freeScroll: true
+    });
+    </script>
+    <!-- <script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+      });
+    </script> -->
     
-  </body>
+</body>
 </html>
